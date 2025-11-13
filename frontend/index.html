@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover your magical aura with our vintage-style Polaroid photobooth. Capture your energy in beautiful colors and receive personalized insights.">
+    <meta name="keywords" content="aura, photobooth, polaroid, energy, magic, vintage, photography">
+    <title>✨ Aura Polaroid Booth - Discover Your Energy Colors</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#ff9ac2">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="✨ Aura Polaroid Booth">
+    <meta property="og:description" content="Discover your magical aura with our vintage-style Polaroid photobooth">
+    <meta property="og:type" content="website">
+    
+    <style>
+      /* Loading screen */
+      #root:empty {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #ffd6e5 0%, #f0ebff 100%);
+      }
+      
+      #root:empty::after {
+        content: '✨ Loading Magic...';
+        font-family: 'Inter', sans-serif;
+        font-size: 1.5rem;
+        color: #6d6875;
+        animation: pulse 1.5s infinite;
+      }
+      
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.7; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
